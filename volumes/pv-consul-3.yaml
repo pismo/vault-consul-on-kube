@@ -1,0 +1,16 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: consul-3-pv
+  namespace: consul
+  labels:
+    type: amazonEBS
+spec:
+  storageClassName: ebs
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteMany
+  awsElasticBlockStore:
+    volumeID: vol-0d9e7007315168b1f
+    fsType: ext4

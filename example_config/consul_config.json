@@ -1,8 +1,8 @@
 {
-  "acl_datacenter":"us-west1-a",
-  "datacenter":"us-west1-a",
+  "acl_datacenter":"sa-east-1",
+  "datacenter":"sa-east-1",
   "acl_default_policy":"deny",
   "acl_down_policy":"deny",
-  "acl_master_token":"C4213989-B836-4A8F-A649-110803BCCDC3 USE YOUR OWN",
-  "encrypt": "XvlT0meOmMpBS6hkSKyRww== USE YOUR OWN"
+  "acl_master_token":"3c0c321a-b09a-4424-b0b7-856daed9dc05",
+  "encrypt": "Soz+6YSHpJI6UpZB+TJLPQ=="
 }

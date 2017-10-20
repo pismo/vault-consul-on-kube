@@ -3,6 +3,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: vault-lb
+  namespace: consul
   labels:
     app: vault
 spec:

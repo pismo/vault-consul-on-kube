@@ -1,0 +1,14 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: consul-3-pvc
+  namespace: consul
+  labels:
+    type: amazonEBS
+spec:
+  storageClassName: ebs
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 10Gi

@@ -2,6 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: consul-2
+  namespace: consul
 spec:
   replicas: 1
   template:
@@ -14,7 +15,7 @@ spec:
         fsGroup: 1000
       containers:
         - name: consul
-          image: "consul:0.7.2"
+          image: "consul:1.0.0"
           resources:
             requests:
               cpu: 100m
@@ -66,8 +67,8 @@ spec:
               mountPath: /etc/consul
       volumes:
         - name: data
-          gcePersistentDisk:
-            pdName: consul-2
+          awsElasticBlockStore:
+            volumeID: vol-0d54f45d3bfbb157e
             fsType: ext4
         - name: "consulconfig"
           "secret": {
